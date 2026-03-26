@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 style="padding:20px">Movies</h1>
+<div class="row" id="movies"></div>
+
+<script>
+fetch("movies.json")
+.then(r=>r.json())
+.then(data=>{
+  document.getElementById("movies").innerHTML =
+    data.map(i=>`
+      <div class="card" onclick="play('${i.videoId}')">
+        <img src="${i.poster}">
+      </div>
+    `).join("");
+});
+
+function play(id){
+  localStorage.setItem("videoId", id);
+  window.location.href="player.html";
+}
+</script>
+
+</body>
+</html>
