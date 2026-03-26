@@ -1,0 +1,101 @@
+:root {
+  --bg: #141414;
+  --card: #1f1f1f;
+  --accent: #e50914;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+nav a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: var(--accent);
+}
+
+/* HERO */
+.hero {
+  height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+}
+
+/* CAROUSEL */
+.carousel {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.card {
+  min-width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* PLAYER */
+.player iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
