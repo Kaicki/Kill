@@ -1,0 +1,13 @@
+[
+{
+"id":"s1",
+"title":"Cyber City",
+"poster":"https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+"banner":"https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+"rating":9.0,
+"genres":["Sci-Fi"],
+"episodes":[
+{"episode":1,"videoId":"abc1"}
+]
+}
+]
