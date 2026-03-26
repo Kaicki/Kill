@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 style="padding:20px">Series</h1>
+<div class="row" id="series"></div>
+
+<script>
+fetch("series.json")
+.then(r=>r.json())
+.then(data=>{
+  document.getElementById("series").innerHTML =
+    data.map(i=>`
+      <div class="card" onclick="play('${i.episodes[0].videoId}')">
+        <img src="${i.poster}">
+      </div>
+    `).join("");
+});
+</script>
+
+</body>
+</html>
