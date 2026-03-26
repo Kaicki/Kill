@@ -1,0 +1,11 @@
+[
+{
+"id":"m1",
+"title":"Dark Horizon",
+"poster":"https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg",
+"banner":"https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg",
+"videoId":"1abc123def456",
+"rating":8.5,
+"genres":["Action","Drama"]
+}
+]
